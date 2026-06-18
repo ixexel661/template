@@ -1,0 +1,23 @@
+{
+	"name": "@template/doc",
+	"type": "module",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"typecheck": "astro check",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/starlight": "catalog:",
+		"astro": "catalog:",
+		"sharp": "catalog:"
+	},
+	"devDependencies": {
+		"@astrojs/check": "catalog:",
+		"typescript": "catalog:"
+	}
+}

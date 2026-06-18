@@ -1,0 +1,23 @@
+{
+	"name": "@template/config",
+	"version": "0.0.0",
+	"description": "",
+	"private": true,
+	"type": "module",
+	"license": "MIT",
+	"files": [
+		"tsconfig.base.json",
+		"tsdown.base.ts"
+	],
+	"exports": {
+		"./tsconfig.base.json": "./tsconfig.base.json",
+		"./tsdown.base": "./tsdown.base.ts",
+		"./package.json": "./package.json"
+	},
+	"peerDependencies": {
+		"tsdown": ">=0.22.0"
+	},
+	"devDependencies": {
+		"tsdown": "catalog:"
+	}
+}

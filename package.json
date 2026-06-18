@@ -1,0 +1,46 @@
+{
+	"name": "@template/workspace",
+	"version": "0.0.0",
+	"description": "",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"prepare": "lefthook install",
+		"build": "pnpm -r build",
+		"dev": "pnpm -r --parallel dev",
+		"test": "pnpm -r test",
+		"typecheck": "pnpm -r typecheck",
+		"lint": "biome lint .",
+		"format": "biome format --write .",
+		"check": "biome check .",
+		"check:fix": "biome check --write .",
+		"taze": "taze",
+		"prepublishOnly": "taze && pnpm -r build",
+		"release": "bumpp -r"
+	},
+	"keywords": [],
+	"author": "ixexel661",
+	"license": "MIT",
+	"engines": {
+		"node": ">=20"
+	},
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "11.7.0",
+			"onFail": "download"
+		}
+	},
+	"packageManager": "pnpm@11.7.0",
+	"devDependencies": {
+		"@biomejs/biome": "catalog:",
+		"@types/node": "catalog:",
+		"bumpp": "catalog:",
+		"knip": "catalog:",
+		"lefthook": "catalog:",
+		"taze": "catalog:",
+		"tsdown": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	}
+}
