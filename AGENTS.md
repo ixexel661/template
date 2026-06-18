@@ -4,9 +4,10 @@ This is a reusable **pnpm-workspace monorepo template** for building TypeScript
 libraries. It ships strict TypeScript, Biome, tsdown, Vitest, knip, taze, bumpp
 and lefthook pre-wired. ESM only.
 
-> The `@template/*` package scope and the `author` field are placeholders.
-> When starting a real project, rename the scope across the workspace and update
-> `author`/`repository` in each `package.json`.
+> The `@template/*` package scope, the `author` field and the repository URL are
+> placeholders. After forking, run `pnpm setup` once: it interactively prompts
+> for the new scope, author and `owner/name`, rewrites every occurrence across
+> the workspace, and removes itself.
 
 ## Development workflow
 

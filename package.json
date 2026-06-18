@@ -5,6 +5,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
+		"setup": "node scripts/setup.mjs",
 		"prepare": "lefthook install",
 		"build": "pnpm -r build",
 		"dev": "pnpm -r --parallel dev",

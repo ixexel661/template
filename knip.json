@@ -3,7 +3,7 @@
 	"tags": ["-lintignore"],
 	"workspaces": {
 		".": {
-			"entry": ["taze.config.ts"]
+			"entry": ["taze.config.ts", "scripts/setup.mjs"]
 		}
 	}
 }
